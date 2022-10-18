@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+    {% block title %}help{% endblock %}
+    <!-- CSS only -->
+
+
+
+{% block content %}
+
+
+<h1>Send message</h1>
+<form action="/ers/" method="post">
+    <label >To admin </label>
+    <input class="form-control mt-2 mb-2" id="your_name" type="text" name="your_name" value="">
+    <button type="submit" class="btn btn-primary btn-block">Submit</button>
+</form>
+
+{% endblock %}

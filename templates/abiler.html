@@ -1,0 +1,28 @@
+
+{% extends "base.html" %}
+    {% block title %}abiler{% endblock %}
+    <!-- CSS only -->
+
+{% block content %}
+     <table style="margin-left:100px;" class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Phone</th>
+      <th scope="col">Instagram</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for as in a %}
+    <tr>
+      <th scope="row">{{ as.id }}</th>
+      <td>{{as.name}}</td>
+      <td>{{ as.phone}}</td>
+      <td>{{ as.instagram }}</td>
+    </tr>
+  {% endfor %}
+
+  </tbody>
+</table>
+    {% endblock %}
